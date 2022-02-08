@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    include: personal
+  # DB接続共通設定
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/english_words_app
+      
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
